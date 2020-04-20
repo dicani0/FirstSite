@@ -1,0 +1,30 @@
+.header{
+    height: 95vh;
+    position: relative;
+    background-image: linear-gradient(to top, rgba($color-primary, .3), rgba($color-secondary, .35)), url("../img/bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ccc;
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0% 100%);
+    -o-clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0% 100%);
+    &__logo-box{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    &__logo-img{
+        position: relative;
+        width: 100px;
+        z-index: -1;
+        display: inline-block;
+        -webkit-mask-image: url("../img/logo.png"), linear-gradient(rgba(0, 50, 0, 0.1), rgba(0, 200, 0, 0.1));
+    }
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

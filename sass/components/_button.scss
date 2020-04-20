@@ -1,0 +1,50 @@
+.btn{
+
+    position: relative;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    transition: transform 0.3s;
+    z-index: 1000;
+    animation: moveFromDown 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+    &::after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0; left: 0;
+        border-radius: 50px;
+        height: 100%; width: 100%;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    &:link,
+    &:visited{
+        text-decoration: none;
+    }
+    &:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+        &::after{
+            transform: scale(1.4);
+            opacity: 0;
+        }
+    }
+    &:active{
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.2);
+    }
+    &--white{
+        background-color: white;
+        color: gray;
+        &::after{
+            content: '';
+            background-color: white;
+        }
+    }
+}

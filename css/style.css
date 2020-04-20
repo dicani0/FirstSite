@@ -36,8 +36,10 @@ body{
     position: relative;
     width: 100px;
     z-index: -1;
-    display: block;
+    display: inline-block;
+    -webkit-mask-image: url("../img/logo.png"), linear-gradient(rgba(0, 50, 0, 0.1), rgba(0, 200, 0, 0.1));
 }
+
 .text-box{
     position: absolute;
     top: 40%;
@@ -55,19 +57,34 @@ body{
     font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 15px;
-
+    animation:  moveInOne 2s ease-out;
 }
 .heading-primary-sub{
+    display: block;
     font-size: 2.0rem;
     letter-spacing: 8px;
-
+    animation:  moveInTwo 2s ease-out;
 }
 
-@@keyframes moveInLeft {
+@keyframes moveInOne {
     0%{
         opacity: 0;
+        transform: translate(-100px, -100px);
+
     }
     100%{
         opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes moveInTwo {
+    0%{
+        opacity: 0;
+        transform: translate(100px, 100px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }

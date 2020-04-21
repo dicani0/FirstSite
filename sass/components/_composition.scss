@@ -1,5 +1,7 @@
 .comp{
     position: relative;
+    height: 100%;
+    display: block;
     &__photo{
         width: 50%;
         display: inline-block;
@@ -8,17 +10,18 @@
         position: absolute;
         transition: transform 0.2s;
         &--p1{
+            left: 0;
             top: 20px;
             z-index: 1;
         }
         &--p2{
-            left: 300px;
+            right: 0;
             top: 40px;
             z-index: 1;
         }
         &--p3{
-            left: 300px;
-            top: 230px;
+            right: 0;
+            top: 25%;
             z-index: 1;
         }
 

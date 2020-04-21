@@ -100,6 +100,8 @@ body {
 
 .paragraph {
   font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .paragraph:not(:last-child) {
@@ -195,6 +197,7 @@ body {
   border-bottom: 1px solid #003200;
   padding: 2px;
   transition: transform 0.3s;
+  font-weight: 400;
 }
 
 .btn-text:link, .btn-text:visited {
@@ -211,6 +214,8 @@ body {
 
 .comp {
   position: relative;
+  height: 100%;
+  display: block;
 }
 
 .comp__photo {
@@ -223,19 +228,20 @@ body {
 }
 
 .comp__photo--p1 {
+  left: 0;
   top: 20px;
   z-index: 1;
 }
 
 .comp__photo--p2 {
-  left: 300px;
+  right: 0;
   top: 40px;
   z-index: 1;
 }
 
 .comp__photo--p3 {
-  left: 300px;
-  top: 230px;
+  right: 0;
+  top: 25%;
   z-index: 1;
 }
 

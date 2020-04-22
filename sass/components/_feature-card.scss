@@ -1,6 +1,6 @@
 .feature-box{
     .feature-card{
-        background-color: $color-white;
+        background-color: rgba($color-white, 0.5);
         min-height: 350px;
         transition: transform 0.3s;
         border-radius: 10px;
@@ -8,7 +8,7 @@
         text-align: center;
         padding: 15px;
         &:hover{
-            transform: translateY(-20px);
+            transform: translateY(-20px) scale(1.15);
         }
         &__icon{
             display: block;

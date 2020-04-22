@@ -1,5 +1,13 @@
 .section-landscape{
     margin-top: -20vh;
     background-color: $color-gray-light;
+    padding: 200px 0 20px;
+}
+.section-features{
     padding: 200px 0;
+    margin-top: -10vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.5), rgba($color-secondary, 0.5)), url("../img/bgimg2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
 }

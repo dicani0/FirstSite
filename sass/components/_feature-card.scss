@@ -1,0 +1,27 @@
+.feature-box{
+    .feature-card{
+        background-color: $color-white;
+        height: 40%;
+        min-height: 350px;
+        transition: transform 0.3s;
+        border-radius: 10px;
+        box-shadow: 2px 4px 3px rgba($color-white, 0.3);
+        text-align: center;
+        padding: 15px;
+        &:hover{
+            transform: translateY(-20px);
+        }
+        &__icon{
+            display: block;
+            font-size: 50px;
+            margin-bottom: 20px;
+            background-image: linear-gradient(to left, rgba($color-primary, 1), rgba($color-secondary, 1));
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+        &__paragraph{
+
+        }
+
+    }
+}

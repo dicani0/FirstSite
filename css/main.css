@@ -242,7 +242,7 @@ body {
 
 .comp__photo--p3 {
   right: 0;
-  top: 45%;
+  top: 25%;
   z-index: 1;
 }
 
@@ -255,7 +255,6 @@ body {
 
 .feature-box .feature-card {
   background-color: #fff;
-  height: 40%;
   min-height: 350px;
   transition: transform 0.3s;
   border-radius: 10px;

@@ -1,6 +1,7 @@
 .flip-card{
     background-color: transparent;
     height: 550px;
+    max-height: 590px;
     perspective: 1000px;
 
     &:hover &__container{
@@ -17,16 +18,19 @@
 
         &--front,
         &--back{
-            padding: 40px 0;
             position: absolute;
             width: 100%; height: 100%;
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
+
+
         }
         &--front{
             clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 55%);
             -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 55%);
             color: white;
+            padding: 40px 0 0;
+
         }
         &--back{
             background-color: royalblue;

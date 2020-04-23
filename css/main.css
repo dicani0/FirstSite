@@ -406,6 +406,32 @@ body {
   border-bottom: 1px solid rgba(119, 119, 119, 0.4);
 }
 
+.story {
+  margin: 0 auto;
+  width: 75%;
+  background-color: #fff;
+  padding: 50px 20px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px #777;
+}
+
+.story__shape {
+  height: 120px;
+  width: 120px;
+  float: left;
+  margin-right: 20px;
+  -webkit-clip-path: circle(50%);
+  -webkit-shape-outside: circle(50%);
+}
+
+.story__shape img {
+  width: 100%;
+}
+
+.story__text {
+  text-align: left;
+}
+
 .header {
   height: 95vh;
   position: relative;
@@ -508,4 +534,9 @@ body {
   background-color: #f7f7f7;
   padding: 200px 0 200px;
   margin-top: -10%;
+}
+
+.section-stories {
+  padding: 0 0 100px;
+  background-color: #f7f7f7;
 }

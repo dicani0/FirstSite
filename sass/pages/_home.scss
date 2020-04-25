@@ -18,8 +18,12 @@
     margin-top: -10%;
 }
 .section-stories{
-    padding: 0 0 100px;
+    padding: 100px 0;
     background-color: rgba($color-gray-light, 0.65);
     position: relative;
 
+}
+.section-book{
+    padding: 150px;
+    background-image: linear-gradient(to bottom, rgba($color-secondary, 0.5), rgba($color-primary, 0.5));
 }

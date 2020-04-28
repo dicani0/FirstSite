@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <div class="nav">
+        <input type="checkbox" class="nav__checkbox" id="nav-toggle" name="" value="">
+        <label for="nav-toggle" class="nav__button">Menu</label>
+        <div class="nav-bg">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="" class="nav__link">Donec tempor</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Ut venenatis</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Mauris tristique</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Nulla facilisi</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Maecenas</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo.png" alt="Logo" class="header__logo-img">
@@ -275,7 +289,7 @@
                                         Option #1
                                     </label>
                                 </div>
-                                <div class="form__radio-group">
+                                <div class="form__radio-group u-mb-m">
                                     <input type="radio" class="form__radio-input" id="big" name="size">
                                     <label for="big" class="form__radio-label">
                                         <span class="form__radio-button"></span>
@@ -284,7 +298,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button class="btn">Click click &rarr;</button>
+                                <button class="btn btn--green">Click click &rarr;</button>
                             </div>
                         </form>
                     </div>
@@ -292,6 +306,30 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo.png" class="footer__logo" alt="">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Donec tempor</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Aliquam</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Pellentesque</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Maecenas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copy">
+                    Class aptent taciti sociosqu ad litora torquent
+                    <a href="#" class="footer__link">Pellentesque nisi tellus</a>
+                    Nulla ut nisl sit amet augue ultricies condimentum. 2020 &copy;
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

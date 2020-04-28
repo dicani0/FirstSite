@@ -1,0 +1,37 @@
+.footer{
+    background-color: #1a1b1b;
+    padding: 100px 0;
+    font-size: 14px;
+
+    &__logo-box{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__logo{
+        width: 180px;
+        height: auto;
+    }
+    &__nav{
+        padding: 15px 0;
+        display: inline-block;
+        border-top: 1px solid $color-secondary;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+        color: white;
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-secondary;
+        text-transform: uppercase;
+    }
+    &__copy{
+        color: white;
+    }
+}

@@ -24,6 +24,7 @@
         z-index: -1;
         transition: all 0.5s;
     }
+    &,
     &:link,
     &:visited{
         text-decoration: none;
@@ -46,6 +47,14 @@
         &::after{
             content: '';
             background-color: white;
+        }
+    }
+    &--green{
+        background-color: $color-secondary;
+        color: $color-white;
+        &::after{
+            content: "";
+            background-color: $color-secondary;
         }
     }
 }

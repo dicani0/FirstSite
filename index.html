@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
                 <span class="heading-primary--main">Lorem ipsum</span>
                 <span class="heading-primary--sub">dolor sit amet</span>
             </h1>
-            <a href="#" class="btn btn--white">Click here</a>
+            <a href="#section-plans" class="btn btn--white">Click here</a>
         </div>
     </header>
 
@@ -55,7 +55,7 @@
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
                     </p>
                     <h3 class="heading-tertiary u-center-text u-mb-s">
                         Excepteur sint occaecat cupidatat
@@ -63,7 +63,7 @@
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <div class="u-center-text">
                         <a href="#" class="btn-text u-center-text">Check this! &rarr;</a>
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-plans">
+        <section class="section-plans" id="section-plans">
             <div class="u-center-text">
                 <h2 class="heading-secondary u-mb-m">
                     Three different plans!
@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="flip-card__container--back">
                                     <h1 class="heading-primary">100$</h1>
-                                    <a href="#" class="btn btn--white">Order now!</a>
+                                    <a href="#popup" class="btn btn--white">Order now!</a>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                                 </div>
                                 <div class="flip-card__container--back">
                                     <h1 class="heading-primary">200$</h1>
-                                    <a href="#" class="btn btn--white">Order now!</a>
+                                    <a href="#popup" class="btn btn--white">Order now!</a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                                 </div>
                                 <div class="flip-card__container--back">
                                     <h1 class="heading-primary">300$</h1>
-                                    <a href="#" class="btn btn--white">Order now!</a>
+                                    <a href="#popup" class="btn btn--white">Order now!</a>
                                 </div>
                             </div>
                         </div>
@@ -332,22 +332,24 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="popup">
+    <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
                 <img class="popup__img" src="img/t1.jpg" alt="">
                 <img class="popup__img" src="img/t2.jpg" alt="">
             </div>
             <div class="popup__right">
-                <h2 class="heading-secondary">Phasellus interdum</h2>
-                <h3 class="heading-tertiary">Sed iaculis tincidunt</h3>
+                <a href="#section-plans" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-mb-s">Phasellus interdum</h2>
+                <h3 class="heading-tertiary u-mb-s">Sed iaculis tincidunt</h3>
                 <p class="popup__text">
                     Nunc at sem non massa sodales facilisis eu sit amet felis. Phasellus imperdiet suscipit volutpat. Mauris in sem rutrum, ultrices elit ut, faucibus nunc. Phasellus placerat lectus ante, eget commodo nisi porttitor vel. Mauris
                     malesuada orci nisi, sit amet vulputate leo congue efficitur.
                 </p>
+                <a href="#" class="btn btn--green">Lorem!</a>
             </div>
         </div>
-    </div> -->
+    </div>
 </body>
 
 </html>
